@@ -19,18 +19,23 @@
         	$('#afficher_cacher').click(function(){
         		if(chgcolor){
         			$('main').animate({
-        				backgroundColor: "#43D9FA",
-        				color: "#fff"
+        				backgroundColor: "#43D9FA"
         			}, 1000);
         			$('#afficher_cacher').animate({
+        				color: "#fff"
+        			}, 1000);
+        			$('p').animate({
         				color: "#000"
         			}, 1000);
         		}
         		else{
         			$('main').animate({
-        				backgroundColor: "#fff",
+        				backgroundColor: "#fff"
         			}, 1000);
         			$('#afficher_cacher').animate({
+        				color: "#43D9FA"
+        			}, 1000);
+        			$('p').animate({
         				color: "#43D9FA"
         			}, 1000);
         		}

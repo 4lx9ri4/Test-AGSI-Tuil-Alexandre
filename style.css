@@ -20,6 +20,7 @@ main {
     margin-top: 14%;
     font-family: sans-serif;
     background-color: #fff;
+    box-shadow: 10px 10px 15px #43D9FA;
 }
 
 h2 {/*suppression du margin-top: 250px; afin de centrer tous les éléments du main*/
