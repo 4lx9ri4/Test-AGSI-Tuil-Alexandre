@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> <!--Appel cdn Jquery-->
+
+    </head>
+    <body>
+        <main><!--rajout d'un main, le body en display: flex est non conseillé-->
+            <h2 id="afficher_cacher" class="flash">Test AGSI</h2> <!--ajout d'un id sur h2 pour l'événement toggle() Jquery-->
+            <p>Créer une branche portant votre nom.</p>
+            <p>Faire une modif et commiter (un commentaire sensé !)</p>
+        </main>
+        <script>
+        //Event Jquery Afficher/Cacher les paragraphes
+        	$('#afficher_cacher').click(function(){
+        		$('p').toggle("slow");     		
+        	});
+    	</script>
+    </body>
+</html>

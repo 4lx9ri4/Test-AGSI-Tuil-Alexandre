@@ -1,0 +1,53 @@
+/*reset css*/
+* {
+    padding: 0;
+    margin: 0;
+}
+/***********/
+body {
+    height:100%;
+    color: #000; /*modification des couleurs*/
+    background-color: #F7F7F7;
+}
+/*rajout d'un main, le body en display: flex est non conseillé*/
+main {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column; /*passage de row à columns pour un affichage du h2 et des p les uns en dessous des autres, pour une mise en page propre*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 14%;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+h2 {/*suppression du margin-top: 250px; afin de centrer tous les éléments du main*/
+    text-align: center;
+    cursor: pointer; /*ajout d'un cursor sur h2 pour indiquer la possibilitée de clicker dessus*/
+    padding: 20px;
+    border: 2px dashed #43D9FA; /*modification des couleurs*/
+    color: #43D9FA;
+}
+
+p {
+    display: none; /*en display:none; pour l'événement toggle() jquery*/
+    margin: 15px; /*appel css de la nouvelle balise p*/
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.flash {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
